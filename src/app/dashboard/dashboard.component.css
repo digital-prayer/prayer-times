@@ -10,6 +10,7 @@
   margin: 50px 100px 0px 100px;
 
   border-radius: 15px;
+  color: black;
 }
 
 #prayerTimes {
@@ -17,11 +18,20 @@
 }
 
 #time h3 {
-  font-size: 80px;
+  font-size: 90px;
   font-family: "Times New Roman", Times, serif;
+  color: black;
+
 }
 
 #date h3 {
-  font-size: 40px;
+  font-size: 51px;
   font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+
+
+#location h1{
+  margin-top: 5px;
+  font-size: 51px;
 }
