@@ -1,0 +1,11 @@
+#container {
+  background-image: url("~src/mosque.jpg");
+  height: 100vh;
+  background-color: lightyellow;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: inherit;
+  background-size: cover;
+  padding: 20px;
+}

@@ -1,0 +1,27 @@
+.relative {
+  padding: 40px;
+  text-align: center;
+  box-shadow: 10px 10px 10px 10px #a2a2a2;
+  height: 55%;
+
+  background-color: rgba(255, 242, 164, 0.23);
+  border-color: rgba(238, 222, 146, 0.24);
+  opacity: 0.7;
+  margin: 50px 100px 0px 100px;
+
+  border-radius: 15px;
+}
+
+#prayerTimes {
+  margin-top: 100px;
+}
+
+#time h3 {
+  font-size: 80px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#date h3 {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+}

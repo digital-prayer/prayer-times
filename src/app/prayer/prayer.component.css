@@ -1,0 +1,24 @@
+@font-face {
+  font-family: product-sans;
+  src: url("../../assets/peter-wiegel_paneuropa-/PaneuropaHighway.ttf");
+}
+
+@font-face {
+  font-family: product-sans-bold;
+  src: url("../../assets/peter-wiegel_paneuropa-/PaneuropaFreeway.ttf");
+}
+
+#singlePrayer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+article {
+  font-size: 58px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#time {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}

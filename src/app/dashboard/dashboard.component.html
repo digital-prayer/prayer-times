@@ -1,0 +1,46 @@
+<div class="relative">
+
+  <div class="row">
+    <div class="col-md-12 text-right" id="time">
+      <h3>{{currentDate | date: 'HH:mm:ss'}}</h3>
+    </div>
+    <div class="col text-left" id="image">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 text-right" id="date">
+      <h3>{{currentDate | date: 'dd.MM.yyyy'}} </h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 text-right" id="location">
+      <h1>{{locationService.getLocation() | uppercase}} </h1>
+    </div>
+  </div>
+
+  <!--
+    <div class="text-md-right" id="countdown" *ngIf="nextPrayer$ | async as nextPrayer">
+      <h4>{{translationService.translateToLatin(nextPrayer.name)}} vaktine kalan süre:
+        <countdown #counter
+                   [config]="{leftTime: leftTime, template: '$!h!:$!m!:$!s!'}"
+                   (finished)="onTimerFinished()">
+        </countdown>
+      </h4>
+    </div>
+  -->
+
+  <div id="prayerTimes" class="row justify-content-md-center">
+    <cr-prayer-times class="col-md-10"></cr-prayer-times>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+

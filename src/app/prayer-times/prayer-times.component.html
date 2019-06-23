@@ -1,0 +1,11 @@
+<ng-container *ngIf="prayerTimes$ | async as prayerTimes"; else loading>
+
+  <div *ngFor="let prayer of prayerTimes.prayers">
+    <cr-prayer [prayer]="prayer"></cr-prayer>
+  </div>
+
+</ng-container>
+
+<ng-template #loading>
+  Gebetszeiten werden geladen ...
+</ng-template>

@@ -1,0 +1,14 @@
+<div class="row"
+     id="singlePrayer"
+     [ngStyle]="styleObject()"
+>
+  <div class="col-md-4 text-md-left justify-content-md-start">
+    <article id="latin">{{getLatin()}}</article>
+  </div>
+  <div class="col-md-4 align-content-md-start">
+    <article id="time">{{prayer.time}}</article>
+  </div>
+  <div class="col-md-4 text-md-right">
+    <article id="arabic">{{getArabic()}}</article>
+  </div>
+</div>

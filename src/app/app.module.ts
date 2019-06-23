@@ -3,16 +3,34 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DatePipe } from '@angular/common';
+import { PrayerComponent } from './prayer/prayer.component';
+import { FormsModule } from '@angular/forms';
+import { PrayerTimesComponent } from './prayer-times/prayer-times.component';
+import { CountdownModule } from 'ngx-countdown';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    PrayerComponent,
+    PrayerTimesComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    CountdownModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
