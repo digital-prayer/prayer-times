@@ -1,0 +1,3 @@
+<ng-container *ngIf="surah$ | async as surah">
+  <marquee id="ayah">{{getAyah(surah)}}</marquee>
+</ng-container>

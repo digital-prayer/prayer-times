@@ -6,6 +6,7 @@ import { Prayer } from '../shared/model/prayer';
 import { TimeService } from '../shared/service/time.service';
 import { TranslationService } from '../shared/service/translation.service';
 import { LocationService } from '../shared/service/location.service';
+import { SurahService } from '../shared/service/surah.service';
 
 @Component({
   selector: 'cr-dashboard',
@@ -23,7 +24,8 @@ export class DashboardComponent implements OnInit {
   constructor(private prayerService: PrayerService,
               private timeService: TimeService,
               private translationService: TranslationService,
-              public locationService: LocationService) {
+              public locationService: LocationService,
+              private surahService : SurahService) {
   }
 
 

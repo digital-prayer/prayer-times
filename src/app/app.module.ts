@@ -12,6 +12,7 @@ import { PrayerTimesComponent } from './prayer-times/prayer-times.component';
 import { CountdownModule } from 'ngx-countdown';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { SurahComponent } from './surah/surah.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     PrayerComponent,
     PrayerTimesComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SurahComponent
   ],
   imports: [
     BrowserModule,
