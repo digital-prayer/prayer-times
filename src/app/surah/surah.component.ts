@@ -30,10 +30,7 @@ export class SurahComponent implements OnInit {
   }
 
   getAyah(surah: Surah) {
-
     const ayah = surah.ayahs[0];
-
-    return `${ayah.text}[${ayah.surahName}-(${surah.number}:${ayah.number})]`;
-
+    return `${ayah.text} [${ayah.surahName}-(${surah.number}:${ayah.number})]`;
   }
 }
