@@ -7,3 +7,10 @@ div {
   margin-bottom: 10px;
 
 }
+
+
+div img {
+  width: 400px;
+  height: 60px;
+}
+
