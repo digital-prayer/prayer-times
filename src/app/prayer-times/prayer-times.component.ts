@@ -18,9 +18,7 @@ export class PrayerTimesComponent implements OnInit {
   ngOnInit() {
     this.initData();
     this.prayerService.prayerChangedSubject.subscribe(prayer => {
-      if (prayer) {
-        this.initData();
-      }
+      this.initData();
     });
   }
 

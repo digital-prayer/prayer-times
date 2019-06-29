@@ -1,3 +1,4 @@
-<ng-container *ngIf="surah$ | async as surah">
-  <marquee id="ayah">{{getAyah(surah)}}</marquee>
-</ng-container>
+<div *ngIf="surah$ | async as surah" id="marquee">
+  <p id="ayah">{{getAyah(surah)}}</p>
+</div>
+

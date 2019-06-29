@@ -26,7 +26,11 @@ export class SurahComponent implements OnInit {
   }
 
   private listenToPrayerService() {
-    this.prayerService.prayerChangedSubject.subscribe(prayer => this.initData());
+    this.prayerService.prayerChangedSubject.subscribe(prayer => {
+      if (prayer) {
+        this.initData();
+      }
+    });
   }
 
   getAyah(surah: Surah) {

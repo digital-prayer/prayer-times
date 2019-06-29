@@ -1,13 +1,12 @@
 .relative {
-  padding: 40px;
+  padding: 30px;
   text-align: center;
   box-shadow: 10px 10px 10px 10px #a2a2a2;
-  height: 66%;
 
   background-color: rgba(255, 242, 164, 0.23);
   border-color: rgba(238, 222, 146, 0.24);
-  opacity: 0.7;
-  margin: 50px 100px 0px 100px;
+  opacity: 0.6;
+  margin: 50px 15px 0px 15px;
 
   border-radius: 15px;
   color: black;
@@ -18,14 +17,14 @@
 }
 
 #time h3 {
-  font-size: 90px;
+  font-size: 120px;
   font-family: "Times New Roman", Times, serif;
   color: black;
 
 }
 
 #date h3 {
-  font-size: 51px;
+  font-size: 80px;
   font-family: "Times New Roman", Times, serif;
   color: black;
 }
@@ -33,5 +32,5 @@
 
 #location h1{
   margin-top: 5px;
-  font-size: 51px;
+  font-size: 80px;
 }

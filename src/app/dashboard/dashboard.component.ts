@@ -25,7 +25,7 @@ export class DashboardComponent implements OnInit {
               private timeService: TimeService,
               private translationService: TranslationService,
               public locationService: LocationService,
-              private surahService : SurahService) {
+              private surahService: SurahService) {
   }
 
 
@@ -52,6 +52,7 @@ export class DashboardComponent implements OnInit {
     boundedTimer.subscribe(() => {
       this.updateTime();
       this.prayerService.updatePrayers(this.currentDate);
+      this.refreshWindowAtMidnight();
     });
   }
 
@@ -75,4 +76,11 @@ export class DashboardComponent implements OnInit {
   }
 
 
+  private refreshWindowAtMidnight() {
+    const midnight = this.timeService.isMidnight(this.currentDate);
+    console.log(midnight);
+    if (midnight) {
+      this.prayerService.prayerChangedSubject.next(null);
+    }
+  }
 }

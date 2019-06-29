@@ -59,16 +59,30 @@ export class TimeService {
     return +timeAsString.split(':')[1];
   }
 
+  /**
+   *
+   * @param date
+   */
+  getSeconds(date: Date): number {
+    const timeAsString = this.datePipe.transform(date, 'HH:mm:ss');
+    return +timeAsString.split(':')[2];
+  }
+
 
   /**
    *
    * @param dateAsString
    * @param otherDate
    */
-  isLogicalEqual(dateAsString: string, otherDate: Date) {
+  isLogicalEqual(dateAsString: string, otherDate: Date): boolean {
+
     const dateOfNextPrayer = this.parseToDate(dateAsString);
 
     return this.getHours(otherDate) === this.getHours(dateOfNextPrayer) &&
       this.getMinutes(otherDate) === this.getMinutes(dateOfNextPrayer);
+  }
+
+  isMidnight(currentDate: Date): boolean {
+    return this.getHours(currentDate) === 0 && this.getMinutes(currentDate) === 0 && this.getSeconds(currentDate) === 0;
   }
 }

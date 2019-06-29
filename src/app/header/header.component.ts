@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log('header');
     this.currentDate = new Date();
   }
 
